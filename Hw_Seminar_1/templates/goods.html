@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block content %}
+<div class="row">
+    <h1 class="col-12 col-md-6 display-2">{{ about }}</h1>
+    {% for goods in goods %}
+    <div class="col-12 col-md-6 col-lg-4">
+        <h2>{{ goods.type }}</h2>
+        <p>{{ goods.text }}</p>
+        <p>{{ goods.price }}</p>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

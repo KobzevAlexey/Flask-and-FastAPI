@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+
+{% block content %}
+<div class="row">
+    <h1 class="col-12 col-md-6 display-2">Домашнее задание к первому семинару</h1>
+    <div class="col-12 col-md-6 col-lg-4">
+        <p> Don't repeat yourself (не повторяй себя) Этот принцип настолько важен, что не требует повторения! Обычно его
+            упоминают акронимом DRY, который впервые появился в небезызвестной книге "The pragmatic programmer", но
+            концепт, сам по себе, был известен довольно давно.</p>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+        <p> Поэтому есть общий шаблон goods.html для разделов с одеждой </p>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+        <p>Теперь у нас есть 4 шаблона для 5 страниц сайта:<br>
+            1 базовый,<br>
+            1 для главной страницы,<br>
+            1 для страницы информации,<br>
+            1 для всех разделов с одеждой</p>
+    </div>
+</div>
+{% endblock %}
